@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .imagenLogo {
+        display: block;
+        margin: auto;
+      }
+      p,
+      H3 {
+        font-weight: bold;
+        text-align: center;
+      }
+      td {
+        width: 150px;
+        height: 35px;
+        text-align: right;
+        border: 1px solid #eaeef5;
+      }
+      th {
+        width: 80px;
+        height: 35px;
+        border: 1px solid #eaeef5;
+      }
+      .alineacion {
+        text-align: left;
+      }
+      .tablaDos {
+        width: 400px;
+        height: 400px;
+        text-align: center;
+      }
+
+      .cuadroDos > td {
+        text-align: center;
+        border: 1px solid black;
+      }
+
+      .cuadroDos > th {
+        border: 1px solid white;
+      }
+      .cuadroDos .formatFila {
+        size: 1px;
+        font-size: 10px;
+        text-align: right;
+        border: 1px solid white;
+      }
+
+      .formatDos {
+        size: 1px;
+        font-size: 10px;
+        border: 1px solid white;
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Portada</p>
+      <img
+        src="../Laboratorio2/Imagenes/Imagen2.png"
+        alt="Logo Universidad"
+        width="50%"
+        class="imagenLogo"
+      />
+      <br />
+
+      <p>Nombre: Alejandro Méndez Leiva</p>
+      <p>Carrera: Informática</p>
+      <p>Nombre del Curso: Programación para Internet</p>
+      <p>Numero de Laboratorio: 2</p>
+      <br />
+      <h3>TABLA DE GASTOS</h3>
+      <table
+        border="0"
+        align="center"
+        cellspacing="0"
+        cellpadding="0"
+        width="50%"
+      >
+        <thead>
+          <tr>
+            <th bgcolor="E0E9F6"></th>
+            <th bgcolor="E0E9F6">Comida</th>
+            <th bgcolor="E0E9F6">Hotel</th>
+            <th bgcolor="E0E9F6">Transporte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alineacion" colspan="4" bgcolor="B6C5DD">San Jose</td>
+          </tr>
+          <tr>
+            <td class="alineacion" bgcolor="E0E9F6">1 de marzo</td>
+            <td>15</td>
+            <td>120</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td class="alineacion" bgcolor="E0E9F6">2 de marzo</td>
+            <td>18</td>
+            <td>120</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td class="alineacion" bgcolor="E0E9F6">3 de marzo</td>
+            <td>25</td>
+            <td>120</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td class="alineacion" colspan="4" bgcolor="B6C5DD">Alajuela</td>
+          </tr>
+          <tr>
+            <td class="alineacion" bgcolor="E0E9F6">4 de marzo</td>
+            <td>10</td>
+            <td>75</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td class="alineacion" bgcolor="E0E9F6">5 de marzo</td>
+            <td>12</td>
+            <td>75</td>
+            <td>14</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div>
+      <table class="tablaDos" align="center" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr class="cuadroDos">
+            <th></th>
+            <th class="formatDos">C1</th>
+            <th class="formatDos">C2</th>
+            <th class="formatDos">C3</th>
+            <th class="formatDos">C4</th>
+          </tr>
+        </thead>
+        <tr class="cuadroDos">
+          <td class="formatFila">F1</td>
+          <td style="color: yellow" colspan="2" bgcolor="#bbd4ec"><b>A</b></td>
+          <td bgcolor="#fbdb64"><i>B</i></td>
+          <td style="color: green" bgcolor="#abd48c">
+            <a href="https://www.google.fr/"><h3>C</h3></a>
+          </td>
+        </tr>
+        <tr class="cuadroDos">
+          <td class="formatFila">F2</td>
+          <td bgcolor="#b8b8b8 " rowspan="3"> <s>D</s> </td>
+          <td bgcolor="#d67720 " colspan="2"> <em>E</em> </td>
+          <td bgcolor="#2b588e "> <sup>F</sup> </td>
+        </tr>
+        <tr class="cuadroDos">
+          <td class="formatFila">F3</td>
+          <td bgcolor=" #73ac43 ">G</td>
+          <td style="font-size: 25px" bgcolor="#b8b8b8" colspan="2">H</td>
+        </tr>
+        <tr class="cuadroDos">
+          <td class="formatFila">F4</td>
+          <td bgcolor="#2b588e "> <strong>I</strong> </td>
+          <td bgcolor="#d67720 "> <i>J</i> </td>
+          <td bgcolor="#bb8b04"> <s>K</s> </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
